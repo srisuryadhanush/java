@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+class sum 
+{
+public static void main(String args[])
+{
+int i=0,n,s=0;
+Scanner u=new Scanner(System.in);
+System.out.println("enter the number:");
+n=u.nextInt();
+while(i<n)
+{
+i=i+1;
+s=s+i;
+}
+System.out.println("sum of digits" +s);
+}
+}
