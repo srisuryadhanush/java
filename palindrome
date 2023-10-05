@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+class palindrome
+{
+public static void main(String args[])
+{
+int sum=0,rem,temp,number;
+Scanner u=new Scanner(System.in);
+System.out.println("enter the number:");
+number=u.nextInt();
+temp=number;
+while(number>0)
+{
+rem= number % 10;
+sum= (sum*10) + rem;
+number= number/10;
+}
+if(sum==temp)
+{
+System.out.println("palindrome");
+}
+else
+{
+System.out.println(" not palindrome");
+}
+}
+}
